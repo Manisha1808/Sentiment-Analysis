@@ -7,7 +7,7 @@ app = Flask(__name__)
 with open("tfidf_vectorizer.pkl", "rb") as f:
     tfidf_vectorizer = pickle.load(f)
 
-with open("Sentiment_model.pkl", "rb") as f:
+with open("sentiment_model.pkl", "rb") as f:  # updated filename here
     sentiment_model = pickle.load(f)
 
 def predict_sentiment(text):
